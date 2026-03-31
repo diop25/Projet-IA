@@ -1,0 +1,33 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="msxly3ZoDnpmP0vx7m_P">
+    <mxGraphModel dx="642" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-7" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" target="hE4UPwagV7u_5OpO7a-w-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="230" />
+              <mxPoint x="730" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Résultats ETL" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-12" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="hE4UPwagV7u_5OpO7a-w-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pythie" vertex="1">
+          <mxGeometry height="60" width="120" x="1080" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DB" vertex="1">
+          <mxGeometry height="60" width="120" x="1920" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Les dernières transactions dans les différents comptes. Those are for retraining the model. The model is already" vertex="1">
+          <mxGeometry height="30" width="307" x="740" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
