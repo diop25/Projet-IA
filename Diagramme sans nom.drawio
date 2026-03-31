@@ -19,10 +19,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pythie" vertex="1">
-          <mxGeometry height="60" width="120" x="900" y="130" as="geometry" />
+          <mxGeometry height="60" width="120" x="1080" y="130" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DB" vertex="1">
           <mxGeometry height="60" width="120" x="1920" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="827" y="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
