@@ -1,31 +1,72 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
   <diagram name="Page-1" id="msxly3ZoDnpmP0vx7m_P">
-    <mxGraphModel dx="642" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2475" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hE4UPwagV7u_5OpO7a-w-7" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" target="hE4UPwagV7u_5OpO7a-w-4" value="">
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-7" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;exitX=1.002;exitY=0.219;exitDx=0;exitDy=0;exitPerimeter=0;" target="hE4UPwagV7u_5OpO7a-w-4" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="730" y="230" />
+              <mxPoint x="673" y="380" />
+              <mxPoint x="730" y="380" />
               <mxPoint x="730" y="160" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hE4UPwagV7u_5OpO7a-w-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Résultats ETL" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="220" as="geometry" />
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;align=center;verticalAlign=top;" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;Data Hub&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="750" width="1230" x="-560" y="220" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-12" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="hE4UPwagV7u_5OpO7a-w-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pythie" vertex="1">
-          <mxGeometry height="60" width="120" x="1080" y="130" as="geometry" />
+          <mxGeometry height="60" width="120" x="1210" y="120" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DB" vertex="1">
           <mxGeometry height="60" width="120" x="1920" y="260" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Les dernières transactions dans les différents comptes. Those are for retraining the model. The model is already" vertex="1">
           <mxGeometry height="30" width="307" x="740" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka (Ingestion)" vertex="1">
+          <mxGeometry height="60" width="120" x="-410" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Flink (Transformation)" vertex="1">
+          <mxGeometry height="60" width="150" x="-90" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data Lake (Stockage)" vertex="1">
+          <mxGeometry height="60" width="150" x="260" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-9" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="BRVM" vertex="1">
+          <mxGeometry height="30" width="120" x="-770" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-10" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Base de données" vertex="1">
+          <mxGeometry height="30" width="120" x="-770" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-12" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Autres apis" vertex="1">
+          <mxGeometry height="30" width="120" x="-770" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-11" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Taux directeurs BCEAO" vertex="1">
+          <mxGeometry height="30" width="120" x="-770" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-8" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;strokeColor=default;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-710.56" y="580" as="sourcePoint" />
+            <mxPoint x="-710.56" y="700" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
