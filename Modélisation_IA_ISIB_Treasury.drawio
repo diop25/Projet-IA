@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
   <diagram name="Page-1" id="msxly3ZoDnpmP0vx7m_P">
-    <mxGraphModel dx="2475" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1618" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,20 +13,20 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hE4UPwagV7u_5OpO7a-w-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;align=center;verticalAlign=top;" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;Data Hub&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="750" width="1230" x="-560" y="220" as="geometry" />
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;align=center;verticalAlign=top;" value="&lt;font style=&quot;font-size: 37px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Data Hub Trésorerie&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="750" width="1230" x="-621" y="216" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-12" edge="1" parent="1" source="hE4UPwagV7u_5OpO7a-w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="hE4UPwagV7u_5OpO7a-w-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hE4UPwagV7u_5OpO7a-w-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pythie" vertex="1">
-          <mxGeometry height="60" width="120" x="1210" y="120" as="geometry" />
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Pythie" vertex="1">
+          <mxGeometry height="60" width="120" x="1121" y="350" as="geometry" />
         </mxCell>
         <mxCell id="hE4UPwagV7u_5OpO7a-w-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DB" vertex="1">
           <mxGeometry height="60" width="120" x="1920" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="hE4UPwagV7u_5OpO7a-w-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Les dernières transactions dans les différents comptes. Those are for retraining the model. The model is already" vertex="1">
-          <mxGeometry height="30" width="307" x="740" y="60" as="geometry" />
+        <mxCell id="hE4UPwagV7u_5OpO7a-w-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="La dernière transaction dans effectué sur l&#39;un des comptes afin de mettre à jour les prévisions de flux." vertex="1">
+          <mxGeometry height="30" width="307" x="740" y="340" as="geometry" />
         </mxCell>
         <mxCell id="Oc6UJdhgNVvvA9SizHdE-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka (Ingestion)" vertex="1">
           <mxGeometry height="60" width="120" x="-410" y="555" as="geometry" />
@@ -67,6 +67,40 @@
             <mxPoint x="-710.56" y="580" as="sourcePoint" />
             <mxPoint x="-710.56" y="700" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontSize=9;" value="Cette couche sera chargée d&#39;ingérer et d&#39;organiser les données brutes venant des différentes sources sous forme de queue et en fonction de critères définis avant de les relayer aux entités qui seront souscrites. Les données restent disponible sur une durée par défaut d&#39;une semaine avant d&#39;être supprimées, ce qui permet facilement de revenir dans le temps en cas d&#39;erreur ou de panne sur les étapes suivantes du pipeline." vertex="1">
+          <mxGeometry height="170" width="210" x="-410" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontSize=9;" value="Flink est le moteur de transformation le plus adéquat pour les opérations en temps réel, principalement grâce à sa faible latence mais aussi parcequ&#39;il garantit que toute opération éffectuée ne sera faite qu&#39;une et une seule fois (Exactly once), donc aucune duplication. C&#39;est ici que les données vont être nettoyées, normalisées, enrichies, etc... jusqu&#39;à être prêtes pour être stockées et/ou données aux modèles.&amp;nbsp;" vertex="1">
+          <mxGeometry height="140" width="210" x="-90" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Architecture Evénementielle" vertex="1">
+          <mxGeometry height="30" width="260" x="-136" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-18" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Oc6UJdhgNVvvA9SizHdE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-19" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-15" y="490" />
+              <mxPoint x="335" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-20" edge="1" parent="1" source="Oc6UJdhgNVvvA9SizHdE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Oc6UJdhgNVvvA9SizHdE-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-15" y="490" />
+              <mxPoint x="-350" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Mage (Orchestrateur)" vertex="1">
+          <mxGeometry height="60" width="150" x="-90" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Oc6UJdhgNVvvA9SizHdE-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontSize=9;" value="Mage sera l&#39;orchestrateur de l&#39;ensemble des jobs au niveau du pipeline,c" vertex="1">
+          <mxGeometry height="140" width="210" x="100" y="330" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
